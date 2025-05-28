@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+:root{
+    --bkgcolor:#090A08;
+    --panelscolor:#252525;
+}
+
+body{
+    background-color: var(--bkgcolor);
+}
+
+nav img{
+    width: 80px;
+    height: 74px;
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 90px;
+    margin: 106px 10px 40px 152px;
+ }
