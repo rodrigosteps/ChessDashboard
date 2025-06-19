@@ -1,28 +1,155 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: inter;
+/* geral style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+/* variables*/
+:root {
+  --bkgcolor: #090a08;
+  --panelscolor: #252525;
+  --h2color: #ffffff;
+  --h2size: 40px;
+  --fontfamily: "inter";
+}
+/* background style*/
+body {
+  background-color: var(--bkgcolor);
+  font-family: var(--fontfamily);
 }
 
-:root{
-    --bkgcolor:#090A08;
-    --panelscolor:#252525;
-}
+.container {
+  display: flex;
+  flex-direction: row;
 
-body{
-    background-color: var(--bkgcolor);
-}
+  /* style of navigation part of the site*/
+  nav img {
+  width:60px;
+  aspect-ratio: 2/2;
+  object-fit: contain;
+  
+  }
 
-nav img{
-    width: 80px;
-    height: 74px;
-}
- nav{
+  nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: nowrap;
+    width: 160px;
     gap: 90px;
     margin: 106px 10px 40px 152px;
- }
+    border-right: solid 1px rgba(255, 255, 255, 0.252);
+    
+  }
+
+  /*panel player style*/
+  .PlayerInfos {
+    h2 {
+      color: var(--h2color);
+      font-size: var(--h2size);
+      margin: 80px 0 10px 36px;
+    }
+    /*player infos*/
+    .Profile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      color: var(--h2color);
+      background-color: var(--panelscolor);
+      border-radius: 18px;
+      width: 320px;
+      height: auto;
+      margin: 0px 0 40px 20px;
+    }
+
+    .PlayerPic {
+      width: 84px;
+      clip-path: circle();
+      background-color: aqua;
+      margin-bottom: 10px;
+    }
+
+    .Player {
+      padding: 10px;
+      font-size: 14px;
+      height: 140px;
+    }
+
+    .SetDown img {
+      width: 20px;
+      scale: 1.5;
+      aspect-ratio: 2/2;
+      object-fit: contain;
+    }
+
+    .Stats {
+      padding: 12px 10px 10px 10px;
+      font-size: 12px;
+      font-style: italic;
+      height: 140px;
+      }
+
+      .CT p {
+        background-color: #e45757;
+        border-radius: 50px;
+        width: 60px;
+        font-style: normal;
+        padding: 4% 6% 4% 10%;
+        margin: 10% 0;
+      }
+
+      .Lvl p {
+        background-color: #74c85a;
+        border-radius: 50px;
+        width: 90px;
+        font-style: italic;
+        font-size: 12px;
+        box-shadow: 36px 0 #4d793f;
+        padding: 4% 6% 4% 10%;
+        margin: 10% 0;
+      }
+    
+  }
+}
+
+/*buttons player*/
+.PlayerButtons img{
+  width: 42px;
+  
+}
+
+.PlayerButtons{
+  padding: 0 20px;
+  filter: invert(100%);
+}
+
+.buttons{
+  margin: 0 24px 4px;
+}
+
+/*activities style*/
+.matches img{
+  width: 40px;
+  margin: 0 0px 0 0px;
+  clip-path: circle();
+  background-color: aqua;
+
+}
+
+.matches tr{
+  text-align: start;
+  color: var(--h2color);
+}
+
+.matches{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 220px; 
+  height: 44px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color:#42b74a ;
+
+}

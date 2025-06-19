@@ -11,67 +11,81 @@
   </head>
 
   <body>
-    <nav class="NavigationIcons">
-      <img src="/ChessDashboard/ASSETS/house-solid.svg" alt="home logo" />
-      <img src="/ChessDashboard/ASSETS/gamepad-solid.svg" alt="versus logo" />
-      <img src="/ChessDashboard/ASSETS/users.svg" alt="social logo" />
-      <img src="/ChessDashboard/ASSETS/settings.svg" alt="settings logo" />
+  
+
+    <main class="container">
+
+     <nav class="NavigationIcons">
+      <img src="/ChessDashboard/ASSETS/home.png" alt="home logo" />
+      <img src="/ChessDashboard/ASSETS/vs.png" alt="versus logo" />
+      <img src="/ChessDashboard/ASSETS/users.png" alt="social logo" id="social"/>
+      <img src="/ChessDashboard/ASSETS/settings.png" alt="settings logo" />
+    
     </nav>
 
-    <main>
-      <section class="profile">
+    
+      '<section class="PlayerInfos">
         <h2>PROFILE</h2>
+        <div class="Profile">
+          <div class="Player">
+          <img class="PlayerPic" src="/ChessDashboard/ASSETS/Players/MariaSilva.png" />
+          <h3 class="SetDown">MARIA SILVA 
+            <img src="/ChessDashboard/ASSETS/caret-down.svg"  />
+          </h3>
+          </div>
 
-        <div class="PLAYER">
-          <img class="player pic" src="" />
-          <h3>MARIA SILVA</h3>
-          <img src="" alt="set down" />
-        </div>
-
-        <div class="stats">
-          <h3>CHESS TITLE</h3>
-          <p>WCM</p>
-          <h3>LEVEL</h3>
+          <div class="Stats">
+          <h3 class="CT">CHESS TITLE
+            <p>WCM</p>
+          </h3>
+          <h3 class="Lvl">LEVEL
           <p>288/500 XP</p>
-        </div>
+          </h3>
+        
+          </div>
+         
 
-        <div class="PlayerButtons">
-          <img src="" alt="AddPlayer" />
-          <img src="" alt="Message" />
-          <img src="" alt="Notifications" />
+          <div class="PlayerButtons">
+            <img class="buttons" src="/ChessDashboard/ASSETS/UserAdd.png" alt="AddPlayer" />
+            <img class="buttons" src="/ChessDashboard/ASSETS/messages.png" alt="Message" />
+            <img class="buttons" src="/ChessDashboard/ASSETS/bell.png" alt="Notifications" />
         </div>
+       </div>
 
-        <div class="ACTIVITIES">
-          <div class="matches">
-            <h3>WON</h3>
-            <p>JONH LONG</p>
-            <img src="" alt="timer" />
-            <p>1:23</p>
+       <div class="Activities">
+         <div class="matches">
+           <table>
+            <img id="matches" src="/ChessDashboard/ASSETS/Players/JonhLong.png" alt="timer" />
+           <tr> <th>WON </th></tr>
+           <tr> <th>JONH LONG</th> <th>1:23</th> </tr>
+        </table>
+        </div>
+        
+        <div class="matches">
+            <img src="/ChessDashboard/ASSETS/Players/BobToss.png" alt="timer" />
+                       <table>
+  
+           <tr> <th>DRAWS </th></tr>
+           <tr> <th>BOB TOSS</th> <th>0:59</th> </tr>
+        </table>
           </div>
 
           <div class="matches">
-            <h3>DRAW</h3>
-            <p>BOB TOSS</p>
-            <img src="" alt="timer" />
-            <p>0:59</p>
-          </div>
-
-          <div class="matches">
+            <img src="/ChessDashboard/ASSETS/Players/rute123.png" alt="timer" /> 
             <h3>WON</h3>
             <p>RUTE123</p>
-            <img src="" alt="timer" />
             <p>0:32</p>
           </div>
 
           <div class="matches">
+            <img src="/ChessDashboard/ASSETS/Players/BenBunner.png" alt="timer"/>
             <h3>WON</h3>
             <p>BEN BUNNER</p>
-            <img src="" alt="timer" />
             <p>1:48</p>
           </div>
         </div>
       </section>
-
+<!--
       <aside class="Dashboard">
         <h2>DASHBOARD</h2>
         <div class="infos">
