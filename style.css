@@ -20,9 +20,9 @@
   --h2color: #ffffff;
   --h2size: 2em;
   --h2font: "Bowlby one";
+  --titanone: 'titan one';
   --h2weight: 200;
-  --fontfamily: "moranga";
-  --boxshadow: 2px -1px 1px 1px #e2e9ff5b;
+  --boxshadow: 2px -1px 1px 1px #ffffff5b;
   --borderradius: 18px;
 }
 
@@ -54,6 +54,8 @@ nav img {
   width: 160px;
   padding: 10em 0;
   gap: 2em;
+  margin-left: 3em;
+  font-family: var(--h2font);
 
   #social,
   #versus {
@@ -75,18 +77,22 @@ nav img {
   padding: 2em;
   margin: 1em;
   gap: 1em;
+  height: 100%;
   border-radius: 30px;
   background-color: #26282a;
+  font-family: var(--titanone);
+  
 
   /*panel player style*/
   .PlayerInfos {
-    text-align: center;
+
 
     h2 {
-      color: var(--h2color);
-      font-size: var(--h2size);
-      font-family: var(--h2font);
-      font-weight: var(--h2weight);
+        text-align: center;
+    color: var(--h2color);
+    font-size: var(--h2size);
+    font-family: var(--h2font);
+    font-weight: var(--h2weight);
     }
 
     /*player infos*/
@@ -132,10 +138,11 @@ nav img {
       text-shadow: 1px 1px 2px #2d2d2d;
     }
 
+    
     .Lvl p {
       background-color: #74c85a;
       border-radius: 50px;
-      width: 90px;
+      width: 10em;
       font-family: "Courier New";
       font-style: italic;
       font-size: 12px;
@@ -144,8 +151,7 @@ nav img {
       margin: 10% 0;
       text-shadow: 1px 1px 2px #2d2d2d;
     }
-  }
-
+ 
   /*buttons player*/
   .PlayerButtons img {
     width: 40px;
@@ -162,10 +168,10 @@ nav img {
   }
 }
 
+
 /*activities style*/
 
 .Activities {
-  padding-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -173,6 +179,7 @@ nav img {
   box-shadow: var(--boxshadow);
   border-radius: var(--borderradius);
   width: 320px;
+  height: 342px;
 }
 .matches img {
   width: 60px;
@@ -203,8 +210,8 @@ nav img {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 300px;
-  margin-top: 20px;
+  width: 90%;
+  margin: 0.6em 0;
   border-radius: var(--borderradius);
   background-color: #3cac43;
   box-shadow: 1px -1px 0.9px 1px #abffafc3;
@@ -217,33 +224,43 @@ nav img {
 }
 
 .infos img {
-  width: 200px;
-  padding: 2em 0em;
+  width:60%;
+  padding: 1em;
 }
 
 .Dashboard {
   color: var(--h2color);
   width: 430px;
 
+
   h2 {
     text-align: center;
-    font-family: var(--h2font);
-    font-weight: var(--h2weight);
     color: var(--h2color);
     font-size: var(--h2size);
+    font-family: var(--h2font);
+    font-weight: var(--h2weight); 
   }
 
-  h4 {
-    padding: 8px;
+  h3 {
+    font-size: 2.5em;
+    font-family: var(--titanone);
+    font-style:oblique;
+    letter-spacing: 2px;
+  }
+
+    h4 {
     font-size: 2em;
-    line-height: 40px;
+    padding: 0.6em 0;
+    font-family: var(--titanone);
+    letter-spacing: 2px;
   }
 
   p {
     font-size: 1em;
-    padding: 0px 40px;
+    padding: 0px 20px;
     margin-bottom: 0px;
     text-align: left;
+     font-family: var(--titanone);
   }
 }
 
@@ -255,6 +272,7 @@ nav img {
   border-radius: var(--borderradius);
   height: 580px;
   box-shadow: var(--boxshadow);
+  padding-top: 1.5em;
 
   .piece {
     padding: 8px;
@@ -282,10 +300,12 @@ nav img {
   border-radius: var(--borderradius);
   box-shadow: var(--boxshadow);
   height: 580px;
+  padding: 2em 0;
 }
 
 .allmatchs {
   color: var(--h2color);
+  font-family: var(--titanone);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -317,6 +337,7 @@ nav img {
   display: flex;
   gap: 40px;
   margin-top: 20px;
+  
 
   .state {
     display: flex;
@@ -331,28 +352,50 @@ nav img {
     text-align: right;
   }
 }
-
+.graphic img{
+  width: 180px;
+}
 .graphic {
   display: flex;
+  justify-content: center;
+  align-items:first baseline;
+  text-align: center;
   gap: 2em;
-  margin: 1em 0;
+  margin: 1em;
   color: var(--h2color);
+  font-family: var(--titanone);
+  font-size: 1.5em;
 
   .img1 {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
-    gap: 10px;
   }
 
   .img2 {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
-    gap: 10px;
+ 
+  }
+}
+ }
+/*Animation */
+ .Dashboard{
+animation: slide 0.4s ease-in-out forwards ;
+}
+.PlayerInfos{
+animation: slide 0.2s ease-in-out forwards ;
+}
+
+.status{
+animation: slide 0.5s ease-in-out forwards ;
+}
+
+@keyframes slide {
+  0% {
+    transform: translatex(10%);
+    opacity: -100%;
+
   }
 }
