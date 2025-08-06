@@ -8,7 +8,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Erica+One&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
     </style>
     <title>Chess Dashboard</title>
   </head>
@@ -72,7 +72,7 @@
           </div>
           <!--Cards Of Main Content End-->
           <!--Activities Card-->
-          <h2>LAST MATCHS</h2>
+          <h2>GAME HISTORY</h2>
           <div class="Activities">
             <!-- Opponents Card-->
             <div class="matches">
@@ -143,18 +143,18 @@
             </div>
           </div>
 
-            <div class="pieceinfo">
-              <h4>PIECE DESCRIPTION</h4>
-              <p>
-                The knight is a minor piece valued at 3 points, similar to the
-                bishop. It has a distinctive L–shaped movement and is the only piece
-                that can "jump over" others on the board.
-              </p>
-            </div>
+          <div class="pieceinfo">
+            <h4>PIECE DESCRIPTION</h4>
+            <p>
+              The knight is a minor piece valued at 3 points, similar to the
+              bishop. It has a distinctive L–shaped movement and is the only
+              piece that can "jump over" others on the board.
+            </p>
+          </div>
         </aside>
         <!--Dashboard Card End-->
         <!--Player Status Card-->
-        <article class="status">
+        <section class="status">
           <h2>PLAYER STATS</h2>
           <div class="playerstats">
             <div class="allmatchs">
@@ -173,17 +173,17 @@
               </div>
             </div>
 
-              <div class="STRATEGY">
-                <div class="state">
-                  <span>OPENNING</span>
-                  <span>DEFENSE</span>
-                </div>
-
-                <div class="strateg">
-                  <p>Benko Gambit</p>
-                  <p>Sicilian defende</p>
-                </div>
+            <div class="STRATEGY">
+              <div class="state">
+                <span>OPENNING</span>
+                <span>DEFENSE</span>
               </div>
+
+              <div class="strateg">
+                <p>Benko Gambit</p>
+                <p>Sicilian defende</p>
+              </div>
+            </div>
             <!--Player Status Card End-->
             <!--Player Graphics-->
             <div class="graphic">
@@ -198,31 +198,33 @@
               </div>
             </div>
           </div>
-        </article>
+        </section>
 
+        <section class="last">
+          <div class="lt">
+            <span> ACTIVITY OVERVIEW </span>
+            <img src="./ASSETS/graphDays.svg" alt="" />
+            </div>
 
+            <div class="lt1">
+              <span> ACHIEVEMENTS </span>
+              <DIV class="BADGE">
+              <img src="./ASSETS/BADGE1.png" alt="">
+              <img src="./ASSETS/BADGE2.png" alt="">
+              <img src="./ASSETS/BADGE3.png" alt="">
+              
+            </div>
+            </div>
+        </section>
 
-        <div class="last">
-     <div class="lt">
-      <img src="./ASSETS/graphDays.svg" alt=""> <span>Matches Activities</span>
-    </div>
-     <div class="lt">asd</div>
-     
-     
-        </div>
-     
-      <!--Player Graphics End-->
-  
-</div>
-
-
-      
+        <!--Player Graphics End-->
+      </div>
     </main>
     <!--Main Content End-->
 
     <!--Footer-->
     <footer class="footer">
-    <img src="./ASSETS/footer.svg" alt="">
+      <img src="./ASSETS/footer.svg" alt="" />
     </footer>
   </body>
   <!--Body End-->
