@@ -49,22 +49,22 @@
               <h3 class="SetDown">MARIA SILVA</h3>
             </div>
 
-            <div class="Stats">
-              <h3 class="CT">
+            <div class="PlayerStatus">
+              <h3 class="ChessTitle">
                 CHESS TITLE
                 <p>WCM</p>
               </h3>
-              <h3 class="Lvl" id="Lvl">
+              <h3 class="PlayerLevel" id="PlayerLevel">
                 LEVEL
                 <p><span>288</span>/<span>500</span> XP</p>
               </h3>
             </div>
 
             <div class="PlayerButtons">
-              <img class="buttons" src="./ASSETS/add.svg" alt="AddPlayer" />
-              <img class="buttons" src="./ASSETS/message.svg" alt="Message" />
+              <img class="Buttons" src="./ASSETS/add.svg" alt="AddPlayer" />
+              <img class="Buttons" src="./ASSETS/message.svg" alt="Message" />
               <img
-                class="buttons"
+                class="Buttons"
                 src="./ASSETS/notification.svg"
                 alt="Notifications"
               />
@@ -75,54 +75,70 @@
           <h2>GAME HISTORY</h2>
           <div class="Activities">
             <!-- Opponents Card-->
-            <div class="matches">
+            <div class="MatchCards">
               <div>
                 <img
-                  id="matches"
+                  id="MatchCards"
                   src="./ASSETS/Players/JonhLong.png"
-                  alt="timer"
+                  alt="MatchTimer"
                 />
               </div>
 
               <div>
                 <p>JOHN LONG</p>
-                <div class="matcheinfo">
-                  <img src="./ASSETS/Hourglass.svg" alt="timer" id="timer" />
+                <div class="MatchInfo">
+                  <img
+                    src="./ASSETS/Hourglass.svg"
+                    alt="MatchTimer"
+                    id="MatchTimer"
+                  />
                   <p>1:23</p>
                 </div>
               </div>
             </div>
 
-            <div class="matches">
-              <img src="./ASSETS/Players/BobToss.png" alt="timer" />
+            <div class="MatchCards">
+              <img src="./ASSETS/Players/BobToss.png" alt="MatchTimer" />
 
               <div>
                 <p>BOB TOSS</p>
-                <div class="matcheinfo">
-                  <img src="./ASSETS/Hourglass.svg" alt="timer" id="timer" />
+                <div class="MatchInfo">
+                  <img
+                    src="./ASSETS/Hourglass.svg"
+                    alt="MatchTimer"
+                    id="MatchTimer"
+                  />
                   <p>0:59</p>
                 </div>
               </div>
             </div>
 
-            <div class="matches" id="loss">
-              <img src="./ASSETS/Players/rute123.png" alt="timer" />
+            <div class="MatchCards" id="loss">
+              <img src="./ASSETS/Players/rute123.png" alt="MatchTimer" />
 
               <div>
                 <p>LAUREN MILLER</p>
-                <div class="matcheinfo">
-                  <img src="./ASSETS/Hourglass.svg" alt="timer" id="timer" />
+                <div class="MatchInfo">
+                  <img
+                    src="./ASSETS/Hourglass.svg"
+                    alt="MatchTimer"
+                    id="MatchTimer"
+                  />
                   <p>2:10</p>
                 </div>
               </div>
             </div>
 
-            <div class="matches">
-              <img src="./ASSETS/Players/BenBunner.png" alt="timer" />
+            <div class="MatchCards">
+              <img src="./ASSETS/Players/BenBunner.png" alt="MatchTimer" />
               <div>
                 <p>BAD BUNNY</p>
-                <div class="matcheinfo">
-                  <img src="./ASSETS/Hourglass.svg" alt="timer" id="timer" />
+                <div class="MatchInfo">
+                  <img
+                    src="./ASSETS/Hourglass.svg"
+                    alt="MatchTimer"
+                    id="MatchTimer"
+                  />
                   <p>0:20</p>
                 </div>
               </div>
@@ -135,37 +151,37 @@
         <aside class="Dashboard">
           <h2>PIECE MOST PLAYED</h2>
           <!--Most Played Piece Card-->
-          <div class="infos">
+          <div class="DashboardInfo">
             <h3>THE KNIGHT</h3>
-            <img src="./ASSETS/horse.png" alt="knight piece" />
-            <div class="piece">
+            <img src="./ASSETS/horse.png" alt="knight Piece" />
+            <div class="Piece">
               <p>48 MATES WITH THE KNIGHT</p>
             </div>
           </div>
 
-          <div class="pieceinfo">
+          <div class="PieceInfo">
             <h4>PIECE DESCRIPTION</h4>
             <p>
-              The knight is a minor piece valued at 3 points, similar to the
+              The knight is a minor Piece valued at 3 points, similar to the
               bishop. It has a distinctive L–shaped movement and is the only
-              piece that can "jump over" others on the board.
+              Piece that can "jump over" others on the board.
             </p>
           </div>
         </aside>
+
         <!--Dashboard Card End-->
         <!--Player Status Card-->
-        <section class="status">
+        <section class="Status">
           <h2>PLAYER STATS</h2>
-          <div class="playerstats">
-            <div class="allmatchs">
-              <div class="game">
+          <div class="">
+            <div class="AllMatch">
+              <div class="Game">
                 <span> WON</span>
                 <span>LOSS</span>
                 <span>DRAWS</span>
                 <span>CHECK MATE</span>
               </div>
-
-              <div class="results">
+              <div class="Results">
                 <p>265</p>
                 <p>93</p>
                 <p>55</p>
@@ -173,26 +189,26 @@
               </div>
             </div>
 
-            <div class="STRATEGY">
-              <div class="state">
-                <span>OPENNING</span>
+            <div class="PlayerStrategy">
+              <div class="OpeningDefense">
+                <span>OPENING</span>
                 <span>DEFENSE</span>
               </div>
-
-              <div class="strateg">
+              <div class="GambitDefense">
                 <p>Benko Gambit</p>
-                <p>Sicilian defende</p>
+                <p>Sicilian Defense</p>
               </div>
             </div>
             <!--Player Status Card End-->
+
             <!--Player Graphics-->
-            <div class="graphic">
-              <div class="img1">
-                <span>MOVES ACCURACY</span>
+            <div class="GraphicWheel">
+              <div class="Img1">
+                <span>MOVES <br>ACCURACY</span>
                 <img src="./ASSETS/chart1.svg" />
               </div>
 
-              <div class="img2">
+              <div class="Img2">
                 <span>WIN RATE</span>
                 <img src="./ASSETS/chart2.svg" />
               </div>
@@ -200,21 +216,20 @@
           </div>
         </section>
 
-        <section class="last">
-          <div class="lt">
+        <section class="OverView">
+          <div class="DaysGraphic">
             <span> ACTIVITY OVERVIEW </span>
             <img src="./ASSETS/graphDays.svg" alt="" />
-            </div>
+          </div>
 
-            <div class="lt1">
-              <span> ACHIEVEMENTS </span>
-              <DIV class="BADGE">
-              <img src="./ASSETS/BADGE1.png" alt="">
-              <img src="./ASSETS/BADGE2.png" alt="">
-              <img src="./ASSETS/BADGE3.png" alt="">
-              
+          <div class="Achievements">
+            <span> ACHIEVEMENTS </span>
+            <div class="Badges">
+              <img src="./ASSETS/BADGE1.png" alt="" />
+              <img src="./ASSETS/BADGE2.png" alt="" />
+              <img src="./ASSETS/BADGE3.png" alt="" />
             </div>
-            </div>
+          </div>
         </section>
 
         <!--Player Graphics End-->

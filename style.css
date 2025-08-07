@@ -25,8 +25,7 @@
 body {
   background-color: var(--bkgcolor);
   font-family: var(--fontfamily);
- zoom: 0.8;
-
+  zoom: 0.8;
 }
 
 .container {
@@ -47,11 +46,11 @@ nav img {
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  color: var(--h2color);
   width: 180px;
   padding: 10% 0;
   gap: 10%;
   margin-left: 3em;
+  color: var(--h2color);
   font-family: var(--h2font);
 
   #social,
@@ -67,385 +66,386 @@ nav img {
 }
 
 .cards {
+  background-color: #5b5b5b;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   margin: 1em 1em;
   gap: 1em;
-  width:80%;
+  width: 80%;
   height: 100%;
   border-radius: 40px;
-  background-color: #5b5b5b;
   font-family: var(--titanone);
+}
 
-  /*panel player style*/
-  .PlayerInfos {
-    h2 {
-      text-align: center;
-      color: var(--h2color);
-      font-size: var(--h2size);
-      font-family: var(--h2font);
-      font-weight: var(--h2weight);
-    }
-
-    /*player infos*/
-    .Profile {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      color: var(--h2color);
-      background-color: var(--panelscolor);
-      box-shadow: var(--boxshadow);
-      border-radius: 18px;
-      width: 320px;
-      height: auto;
-    }
-
-    .PlayerPic {
-      width: 84px;
-      clip-path: circle();
-      background-color: aqua;
-      margin-bottom: 10px;
-    }
-
-    .Player {
-      padding: 10px;
-      font-size: 14px;
-      height: 140px;
-    }
-
-    .Stats {
-      padding: 12px 10px 10px 10px;
-      font-size: 12px;
-      font-style: italic;
-      height: 140px;
-    }
-
-    .CT p {
-      background-color: #e45757;
-      border-radius: 50px;
-      font-size: var(--p);
-      width: 60px;
-      font-style: normal;
-      padding: 4% 6% 4% 10%;
-      margin: 10% 0;
-      text-shadow: 1px 1px 2px #2d2d2d;
-    }
-
-    .Lvl p {
-      background-color: #74c85a;
-      border-radius: 50px;
-      width: 10em;
-      font-family: "Courier New";
-      font-style: italic;
-      font-size: 12px;
-      box-shadow: 36px 0 #4d793f;
-      padding: 4% 6% 4% 10%;
-      margin: 10% 0;
-      text-shadow: 1px 1px 2px #2d2d2d;
-    }
-
-    /*buttons player*/
-    .PlayerButtons img {
-      width: 40px;
-      aspect-ratio: 2/2;
-      object-fit: contain;
-    }
-
-    .PlayerButtons {
-      padding: 0 20px;
-    }
-
-    .buttons {
-      margin: 0 24px 4px;
-    }
+/*panel player style*/
+.PlayerInfos {
+  h2 {
+    text-align: center;
+    color: var(--h2color);
+    font-size: var(--h2size);
+    font-family: var(--h2font);
+    font-weight: var(--h2weight);
   }
 
-  /*activities style*/
-
-  .Activities {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  /*player infos*/
+  .Profile {
     background-color: var(--panelscolor);
-    box-shadow: var(--boxshadow);
-    border-radius: var(--borderradius);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 320px;
-    height: 334px;
-  }
-  .matches img {
-    width: 60px;
-    margin: 0;
-    aspect-ratio: 2/2;
-    object-fit: contain;
-    filter: drop-shadow(1px 1px 2px #2d2d2d);
+    height: auto;
+    border-radius: 18px;
+    color: var(--h2color);
+    box-shadow: var(--boxshadow);
   }
 
-  #loss {
+  .PlayerPic {
+    background-color: aqua;
+    width: 84px;
+    clip-path: circle();
+    margin-bottom: 10px;
+  }
+
+  .Player {
+    padding: 10px;
+    font-size: 14px;
+    height: 140px;
+  }
+
+  .PlayerStatus {
+    padding: 12px 10px 10px 10px;
+    font-size: 12px;
+    font-style: italic;
+    height: 140px;
+  }
+
+  .ChessTitle p {
     background-color: #e45757;
-    box-shadow: 1px -1px 0.9px 1px #fe9e9e;
+    width: 60px;
+    font-style: normal;
+    padding: 4% 6% 4% 10%;
+    margin: 10% 0;
+    text-shadow: 1px 1px 2px #2d2d2d;
+    border-radius: 50px;
+    font-size: var(--p);
   }
 
-  #timer {
-    width: 30px;
-  }
-
-  .matches p {
-    text-align: start;
-    font-weight: 600;
-    font-size: large;
-    color: rgb(255, 255, 255);
+  .PlayerLevel p {
+    background-color: #74c85a;
+    font-family: "Courier New";
+    font-style: italic;
+    font-size: 12px;
+    width: 10em;
+    padding: 4% 6% 4% 10%;
+    margin: 10% 0;
+    border-radius: 50px;
+    box-shadow: 36px 0 #4d793f;
     text-shadow: 1px 1px 2px #2d2d2d;
   }
 
-  .matches {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0.6em 0;
-    border-radius: var(--borderradius);
-    background-color: #3cac43;
-    box-shadow: 1px -1px 0.9px 1px #abffafc3;
-    height: 60px;
+  /*buttons player*/
+  .PlayerButtons img {
+    width: 40px;
+    aspect-ratio: 2/2;
+    object-fit: contain;
   }
 
-  .matcheinfo {
-    display: flex;
-    align-items: center;
+  .PlayerButtons {
+    padding: 0 20px;
   }
 
-  .infos img {
-    width: 60%;
+  .Buttons {
+    margin: 0 24px 4px;
   }
+}
 
-  .Dashboard {
-    color: var(--h2color);
-    width: 430px;
+/*activities style*/
 
-    h2 {
-      text-align: center;
-      color: var(--h2color);
-      font-size: var(--h2size);
-      font-family: var(--h2font);
-      font-weight: var(--h2weight);
-    }
+.Activities {
+  background-color: var(--panelscolor);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+  height: 334px;
+  box-shadow: var(--boxshadow);
+  border-radius: var(--borderradius);
+}
 
-    h3 {
-      font-size: 2.5em;
-      font-family: var(--titanone);
-      font-style: oblique;
-      letter-spacing: 2px;
-    }
+.MatchCards img {
+  width: 60px;
+  margin: 0;
+  aspect-ratio: 2/2;
+  object-fit: contain;
+  filter: drop-shadow(1px 1px 2px #2d2d2d);
+}
 
-    h4 {
-      font-size: 2em;
-      padding: 0.5em;
-      font-family: var(--titanone);
-      font-style: oblique;
-      letter-spacing: 2px;
-    }
+#loss {
+  background-color: #e45757;
+  box-shadow: 1px -1px 0.9px 1px #fe9e9e;
+}
 
-    p {
-      font-size: 1.1em;
-      padding: 0px 20px;
-      margin-bottom: 0px;
-      text-align: center;
-      font-family: var(--titanone);
-    }
-  }
+#MatchTimer {
+  width: 30px;
+}
 
-  .infos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--panelscolor);
-    border-radius: var(--borderradius);
-    height: 396px;
-    box-shadow: var(--boxshadow);
-    padding-top: 1.5em;
+.MatchCardsp {
+  text-align: start;
+  font-weight: 600;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #2d2d2d;
+}
 
-    .piece {
-      padding: 8px;
-      font-size: 1.5em;
-    }
-  }
-  .pieceinfo {
-    margin-top: 1em;
-    background-color: var(--panelscolor);
-    border-radius: var(--borderradius);
-    height: 180px;
-    box-shadow: var(--boxshadow);
-    text-align: center;
-  }
-  .status {
-    width: 430px;
+.MatchCards {
+  background-color: #3cac43;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0.6em 0;
+  height: 60px;
+  box-shadow: 1px -1px 0.9px 1px #abffafc3;
+  border-radius: var(--borderradius);
+}
 
-    h2 {
-      text-align: center;
-      color: var(--h2color);
-      font-size: var(--h2size);
-      font-family: var(--h2font);
-      font-weight: var(--h2weight);
-    }
-  }
+.MatchInfo {
+  display: flex;
+  align-items: center;
+}
 
-  .playerstats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 380px;
-  }
+.DashboardInfo img {
+  width: 60%;
+}
 
-  .allmatchs {
-    color: var(--h2color);
-    font-family: var(--titanone);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em 2em;
-    font-size: 1em;
-    background-color: var(--panelscolor);
-    border-radius: var(--borderradius);
-    box-shadow: var(--boxshadow);
-    width: 100%;
+.Dashboard {
+  color: var(--h2color);
+  width: 430px;
 
-    p {
-      font-size: 2em;
-    }
-
-    span {
-      font-size: 2em;
-    }
-
-    .game {
-      display: flex;
-      flex-direction: column;
-      margin-top: 10px;
-    }
-
-    .results {
-      display: flex;
-      flex-direction: column;
-      text-align: end;
-      margin-top: 10px;
-    }
-  }
-
-  .STRATEGY {
-    display: flex;
-    justify-content: center;
-    gap: 4em;
-    margin-top: 1em;
-    padding: 0.5em;
-    background-color: var(--panelscolor);
-    border-radius: var(--borderradius);
-    box-shadow: var(--boxshadow);
-    width: 100%;
+  h2 {
     text-align: center;
     color: var(--h2color);
-    font-size: 1.5em;
+    font-size: var(--h2size);
+    font-family: var(--h2font);
     font-weight: var(--h2weight);
-
-    .state {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .strateg {
-      display: flex;
-      flex-direction: column;
-      text-align: right;
-    }
   }
-  .graphic img {
-    width: 160px;
-  }
-  .graphic {
-    display: flex;
-    justify-content: center;
-    align-items: first baseline;
-    text-align: center;
-    gap: 2em;
-    margin: 1em;
-    padding: 0.5em;
-    color: var(--h2color);
+
+  h3 {
+    font-size: 2.5em;
+    font-style: oblique;
+    letter-spacing: 2px;
     font-family: var(--titanone);
+  }
+
+  h4 {
+    font-size: 2em;
+    padding: 0.5em;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-family: var(--titanone);
+  }
+
+  p {
+    font-size: 1.1em;
+    padding: 0px 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: var(--titanone);
+  }
+}
+
+.DashboardInfo {
+  background-color: var(--panelscolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 396px;
+  padding-top: 1.5em;
+  border-radius: var(--borderradius);
+  box-shadow: var(--boxshadow);
+
+  .Piece {
+    padding: 8px;
     font-size: 1.5em;
-    background-color: var(--panelscolor);
-    border-radius: var(--borderradius);
-    box-shadow: var(--boxshadow);
-    width: 100%;
+  }
+}
+.PieceInfo {
+  background-color: var(--panelscolor);
+  text-align: center;
+  height: 180px;
+  margin-top: 1em;
+  border-radius: var(--borderradius);
+  box-shadow: var(--boxshadow);
+}
+.Status {
+  width: 430px;
 
-    .img1 {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: 20px;
-    }
+  h2 {
+    text-align: center;
+    color: var(--h2color);
+    font-size: var(--h2size);
+    font-family: var(--h2font);
+    font-weight: var(--h2weight);
+  }
+}
 
-    .img2 {
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: 20px;
-    }
+.PlayerStatus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+}
+
+.AllMatch {
+  background-color: var(--panelscolor);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em 2em;
+  font-size: 1em;
+  font-family: var(--titanone);
+  color: var(--h2color);
+  border-radius: var(--borderradius);
+  box-shadow: var(--boxshadow);
+
+  p {
+    font-size: 2em;
   }
-  
-  .lt img {
-    height: 120px;
+
+  span {
+    font-size: 2em;
   }
-  .lt1 img{
-    width: 90px;
-    object-fit: cover;
-    aspect-ratio: 3/4;
+
+  .Game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
   }
-  .last {
+
+  .Results {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-top: 10px;
+  }
+}
+
+.PlayerStrategy {
+  background-color: var(--panelscolor);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 4em;
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 100%;
+  font-size: 1.5em;
+  box-shadow: var(--boxshadow);
+  color: var(--h2color);
+  border-radius: var(--borderradius);
+  font-weight: var(--h2weight);
+
+  .OpeningDefense {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .GambitDefense {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+.GraphicWheel img {
+  width: 160px;
+}
+.GraphicWheel {
+  background-color: var(--panelscolor);
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  text-align: center;
+  width: 100%;
+  gap: 2em;
+  margin: 1em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  color: var(--h2color);
+  font-family: var(--titanone);
+  border-radius: var(--borderradius);
+  box-shadow: var(--boxshadow);
+
+  .Img1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .Img2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+.DaysGraphic img {
+  height: 120px;
+}
+.Achievements img {
+  width: 90px;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
+.OverView {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
   margin-bottom: 1em;
   margin-top: 0.5em;
-  
-    .lt {
-      background-color: var(--panelscolor);
-      border-radius: var(--borderradius);
-      box-shadow: var(--boxshadow);
-      color: var(--h2color);
-      font-family: var(--titanone);
-      font-size: 1.5em;
+
+  .DaysGraphic {
+    background-color: var(--panelscolor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+    width: 600px;
+    padding: 2px;
+    gap: 0.5em;
+    color: var(--h2color);
+    font-family: var(--titanone);
+    box-shadow: var(--boxshadow);
+    border-radius: var(--borderradius);
+  }
+
+  .Achievements {
+    background-color: var(--panelscolor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+    width: 600px;
+    padding: 2px;
+    gap: 0.5em;
+    color: var(--h2color);
+    font-family: var(--titanone);
+    box-shadow: var(--boxshadow);
+    border-radius: var(--borderradius);
+
+    .Badges {
       display: flex;
-      flex-direction: column;
-      text-align: center;
-      width: 600px;
-      padding: 2px;
-      gap: 0.5em;
-    }
-  
-    .lt1{
-      background-color: var(--panelscolor);
-      border-radius: var(--borderradius);
-      box-shadow: var(--boxshadow);
-      color: var(--h2color);
-      font-family: var(--titanone);
-      font-size: 1.5em;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      width: 600px;
-      padding: 2px;
-      gap: 0.5em;
-  
-      .BADGE{
-        display: flex;
-        justify-content: space-evenly;
-      }
-  
+      justify-content: space-evenly;
     }
   }
 }
-
-
 
 .footer img {
   border-top: 1px solid #fafafa;
@@ -458,12 +458,12 @@ nav img {
 }
 /*Animation */
 .Dashboard,
-.lt{
+.DaysGraphic {
   animation: slide 0.5s ease-in-out forwards;
 }
 .PlayerInfos,
-.status,
-.lt1 {
+.Status,
+.Achievements {
   animation: slide 0.6s ease-in-out forwards;
 }
 
@@ -473,3 +473,99 @@ nav img {
   }
 }
 
+@media screen and (max-width: 1244px)  {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0.5em 0;
+  }
+  .NavigationIcons {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 950px;
+    gap: 1em;
+    padding: 1em;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0.5em 0;
+  }
+  .AllMatch,
+  .PlayerStrategy,
+  .GraphicWheel {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0.5em 0;
+  }
+  .Status {
+    margin: 0;
+    width: 80%;
+  }
+  .OverView {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:700px)  {
+  body{
+justify-content: center;
+  }
+  .container{
+    margin: 1em;
+  }
+  .cards{
+    width: 100%;
+  }
+
+
+.NavigationIcons{
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  margin: 0;
+  width: 200px;
+}
+.GraphicWheel img{
+  width: 80px;
+}
+.Dashboard{
+  margin: 0 0.5em;
+}
+.PlayerStrategy{
+  padding: 0.5em;
+}
+.OpeningDefense,
+.GambitDefense{
+  font-size: 20px;
+}
+.OverView img{
+  width: 300px;
+}
+.OverView{
+  width: 400px;
+}
+
+.GraphicWheel{
+justify-content: last baseline;
+padding: 0;
+gap: 1em;
+}
+
+.Badges img{
+width: 80px;
+}
+.DaysGraphic{
+  align-items: center;
+}
+
+}
