@@ -42,7 +42,9 @@ nav img {
   object-fit: contain;
 }
 
-
+.NavigationIcons span{
+  font-size: 2em;
+}
 .NavigationIcons {
   display: flex;
   flex-direction: column;
@@ -54,6 +56,7 @@ nav img {
   margin-left: 3em;
   color: var(--h2color);
   font-family: var(--h2font);
+  
 
   #social,
   #versus {
@@ -348,15 +351,13 @@ nav img {
   width: 100%;
   font-size: 1.5em;
   color: var(--h2color);
-  font-weight:400;
+  font-weight: 400;
   box-shadow: var(--boxshadow);
   border-radius: var(--borderradius);
-  
 
   .OpeningDefense {
     display: flex;
     flex-direction: column;
- 
   }
 
   .GambitDefense {
@@ -452,17 +453,16 @@ nav img {
   }
 }
 
-
 /*Animation */
 .Dashboard,
 .DaysGraphic,
-.NavigationIcons{
-  animation: slide 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
+.NavigationIcons {
+  animation: slide 0.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 .PlayerInfos,
 .Status,
 .Achievements {
-  animation: slide 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
+  animation: slide 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes slide {
@@ -471,7 +471,6 @@ nav img {
   }
 }
 
-
 /*Mobile device styles*/
 @media screen and (max-width: 1244px) {
   .container {
@@ -479,21 +478,21 @@ nav img {
     flex-direction: column;
     align-items: center;
     padding: 0;
-    margin: 0.5em 0;
+
   }
   .NavigationIcons {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 950px;
-    gap: 1em;
     padding: 1em;
   }
   .cards {
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin: 0.5em 0;
+  
+    
   }
   .AllMatch,
   .PlayerStrategy,
@@ -501,11 +500,11 @@ nav img {
     justify-content: space-around;
     align-items: center;
     padding: 0;
-    margin: 0.5em 0;
+    margin: 0;
   }
+  
   .Status {
     margin: 0;
-    width: 80%;
   }
   .OverView {
     justify-content: center;
@@ -518,21 +517,21 @@ nav img {
 @media screen and (max-width: 700px) {
   body {
     justify-content: center;
- }
+  }
 
   .container {
     margin: 1em;
 
-     h2{
+    h2 {
       font-size: 1.8em;
     }
   }
   .cards {
-    width: 100%;
+    width: 90%;
   }
-.NavigationIcons {
-  zoom: 0.7;
-}
+  .NavigationIcons {
+    zoom: 0.7;
+  }
 
   .NavigationIcons {
     justify-content: center;
@@ -546,9 +545,11 @@ nav img {
   }
   .Dashboard {
     margin: 0 0.5em;
+     width: 90%;
   }
   .PlayerStrategy {
     padding: 0.5em;
+    
   }
   .OpeningDefense,
   .GambitDefense {
@@ -558,7 +559,7 @@ nav img {
     width: 300px;
   }
   .OverView {
-    width: 400px;
+    width: 90%;
   }
 
   .GraphicWheel {
@@ -573,6 +574,4 @@ nav img {
   .DaysGraphic {
     align-items: center;
   }
-
-  
 }
