@@ -10,14 +10,15 @@
 }
 /* variables*/
 :root {
-  --bkgcolor: #2d2a2a;
-  --panelscolor: #2d2a2a;
-  --h2color: #fafafa;
+  --bkgcolor: #1e1e24;
+  --panelscolor: #1e1e24;
+  --containercolor: #6f6f6f;
+  --h2color: #f6f6f6;
   --h2size: 3em;
   --h2font: "Druk";
   --titanone: "outfit";
   --h2weight: 200;
-  --boxshadow: 4px -1px 4px 1px #bcc1c25b;
+  --boxshadow: 2px 4px 4px 4px #1718185b;
   --borderradius: 18px;
 }
 
@@ -66,7 +67,7 @@ nav img {
 }
 
 .cards {
-  background-color: #5b5b5b;
+  background-color: var(--containercolor);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -176,9 +177,8 @@ nav img {
 }
 
 .MatchCards img {
-  width: 60px;
+  width: 64px;
   margin: 0;
-  aspect-ratio: 2/2;
   object-fit: contain;
   filter: drop-shadow(1px 1px 2px #2d2d2d);
 }
@@ -192,7 +192,7 @@ nav img {
   width: 30px;
 }
 
-.MatchCardsp {
+.MatchCards p {
   text-align: start;
   font-weight: 600;
   font-size: large;
@@ -206,8 +206,8 @@ nav img {
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 90%;
-  margin: 0.6em 0;
-  height: 60px;
+  margin: auto;
+  height: auto;
   box-shadow: 1px -1px 0.9px 1px #abffafc3;
   border-radius: var(--borderradius);
 }
@@ -370,8 +370,8 @@ nav img {
   align-items: first baseline;
   text-align: center;
   width: 100%;
-  gap: 2em;
-  margin: 1em;
+  gap: 1em;
+  margin: 0.5em 0 0 0;
   padding: 0.5em;
   font-size: 1.5em;
   color: var(--h2color);
@@ -447,24 +447,17 @@ nav img {
   }
 }
 
-.footer img {
-  border-top: 1px solid #fafafa;
-  margin-top: 1em;
-}
-.footer {
-  display: none;
-  margin: 0 auto;
-  width: 400px;
-}
+
 /*Animation */
 .Dashboard,
-.DaysGraphic {
-  animation: slide 0.5s ease-in-out forwards;
+.DaysGraphic,
+.NavigationIcons{
+  animation: slide 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
 }
 .PlayerInfos,
 .Status,
 .Achievements {
-  animation: slide 0.6s ease-in-out forwards;
+  animation: slide 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) forwards;
 }
 
 @keyframes slide {
@@ -473,8 +466,9 @@ nav img {
   }
 }
 
-@media screen and (max-width: 1244px)  {
 
+/*Mobile device styles*/
+@media screen and (max-width: 1244px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -516,56 +510,64 @@ nav img {
   }
 }
 
-@media screen and (max-width:700px)  {
-  body{
-justify-content: center;
-  }
-  .container{
+@media screen and (max-width: 700px) {
+  body {
+    justify-content: center;
+ }
+
+  .container {
     margin: 1em;
+
+     h2{
+      font-size: 1.8em;
+    }
   }
-  .cards{
+  .cards {
     width: 100%;
   }
-
-
-.NavigationIcons{
-  justify-content: center;
-  align-items: center;
-  gap: 3em;
-  margin: 0;
-  width: 200px;
-}
-.GraphicWheel img{
-  width: 80px;
-}
-.Dashboard{
-  margin: 0 0.5em;
-}
-.PlayerStrategy{
-  padding: 0.5em;
-}
-.OpeningDefense,
-.GambitDefense{
-  font-size: 20px;
-}
-.OverView img{
-  width: 300px;
-}
-.OverView{
-  width: 400px;
+.NavigationIcons {
+  zoom: 0.7;
 }
 
-.GraphicWheel{
-justify-content: last baseline;
-padding: 0;
-gap: 1em;
-}
+  .NavigationIcons {
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin: 0;
+    width: 200px;
+  }
+  .GraphicWheel img {
+    width: 80px;
+  }
+  .Dashboard {
+    margin: 0 0.5em;
+  }
+  .PlayerStrategy {
+    padding: 0.5em;
+  }
+  .OpeningDefense,
+  .GambitDefense {
+    font-size: 20px;
+  }
+  .OverView img {
+    width: 300px;
+  }
+  .OverView {
+    width: 400px;
+  }
 
-.Badges img{
-width: 80px;
-}
-.DaysGraphic{
-  align-items: center;
-}
+  .GraphicWheel {
+    justify-content: last baseline;
+    padding: 0;
+    gap: 1em;
+  }
 
+  .Badges img {
+    width: 80px;
+  }
+  .DaysGraphic {
+    align-items: center;
+  }
+
+  
 }
