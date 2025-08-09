@@ -348,7 +348,7 @@ nav img {
   width: 100%;
   font-size: 1.5em;
   color: var(--h2color);
-  font-weight: var(--h2weight);
+  font-weight:400;
   box-shadow: var(--boxshadow);
   border-radius: var(--borderradius);
   
