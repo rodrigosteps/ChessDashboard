@@ -57,11 +57,6 @@ nav img {
   color: var(--h2color);
   font-family: var(--h2font);
   
-
-  #social,
-  #versus {
-    width: 5em;
-  }
 }
 
 .navicon {
@@ -496,13 +491,22 @@ nav img {
   }
   .AllMatch,
   .PlayerStrategy,
-  .GraphicWheel {
+  .GraphicWheel,
+  .PieceInfo {
     justify-content: space-around;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin: 0.5em 0;
   }
   
+  .PieceInfo p{
+    word-break: break-all;
+
+  }
+    .OpeningDefense,
+  .GambitDefense {
+    padding: 0.5em;
+  }
   .Status {
     margin: 0;
   }
@@ -528,10 +532,7 @@ nav img {
   }
   .cards {
     width: 90%;
-  }
-  .NavigationIcons {
-    zoom: 0.7;
-  }
+  } 
 
   .NavigationIcons {
     justify-content: center;
@@ -543,12 +544,21 @@ nav img {
   .GraphicWheel img {
     width: 80px;
   }
+
   .Dashboard {
     margin: 0 0.5em;
-     width: 90%;
+    h4{
+      font-size: 200%;
+     }
+
+     p{
+      font-size: 1em;
+     }
   }
+  
   .PlayerStrategy {
     padding: 0.5em;
+    margin: 0.5em 0;
     
   }
   .OpeningDefense,
