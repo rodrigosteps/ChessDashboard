@@ -272,6 +272,7 @@ nav img {
     font-size: 1.5em;
   }
 }
+
 .PieceInfo {
   background-color: var(--panelscolor);
   text-align: center;
@@ -280,6 +281,7 @@ nav img {
   border-radius: var(--borderradius);
   box-shadow: var(--boxshadow);
 }
+
 .Status {
   width: 430px;
 
@@ -344,14 +346,16 @@ nav img {
   padding: 0.5em;
   width: 100%;
   font-size: 1.5em;
-  box-shadow: var(--boxshadow);
   color: var(--h2color);
-  border-radius: var(--borderradius);
   font-weight: var(--h2weight);
+  box-shadow: var(--boxshadow);
+  border-radius: var(--borderradius);
+  
 
   .OpeningDefense {
     display: flex;
     flex-direction: column;
+    
   }
 
   .GambitDefense {
