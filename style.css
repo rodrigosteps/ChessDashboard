@@ -10,7 +10,7 @@
 }
 /* variables*/
 :root {
-  --bkgcolor: #;
+  --bkgcolor: #1e1e24;
   --panelscolor: #1e1e24;
   --containercolor: #6f6f6f;
   --h2color: #fafafa;
@@ -33,6 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin: 4em 0;
 }
 
 /* style of navigation part of the site*/
