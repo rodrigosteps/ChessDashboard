@@ -43,7 +43,7 @@ nav img {
   object-fit: contain;
 }
 
-.NavigationIcons span{
+.NavigationIcons span {
   font-size: 2em;
 }
 .NavigationIcons {
@@ -57,7 +57,6 @@ nav img {
   margin-left: 3em;
   color: var(--h2color);
   font-family: var(--h2font);
-  
 }
 
 .navicon {
@@ -474,7 +473,6 @@ nav img {
     flex-direction: column;
     align-items: center;
     padding: 0;
-
   }
   .NavigationIcons {
     flex-direction: row;
@@ -487,8 +485,6 @@ nav img {
     display: flex;
     flex-direction: row;
     padding: 0;
-  
-    
   }
   .AllMatch,
   .PlayerStrategy,
@@ -499,12 +495,11 @@ nav img {
     padding: 0;
     margin: 0.5em 0;
   }
-  
-  .PieceInfo p{
-    word-break: break-all;
 
+  .PieceInfo p {
+    word-break: break-all;
   }
-    .OpeningDefense,
+  .OpeningDefense,
   .GambitDefense {
     padding: 0.5em;
   }
@@ -533,7 +528,7 @@ nav img {
   }
   .cards {
     width: 90%;
-  } 
+  }
 
   .NavigationIcons {
     justify-content: center;
@@ -548,19 +543,18 @@ nav img {
 
   .Dashboard {
     margin: 0 0.5em;
-    h4{
+    h4 {
       font-size: 200%;
-     }
+    }
 
-     p{
+    p {
       font-size: 1em;
-     }
+    }
   }
-  
+
   .PlayerStrategy {
     padding: 0.5em;
     margin: 0.5em 0;
-    
   }
   .OpeningDefense,
   .GambitDefense {
